@@ -4,8 +4,7 @@ import socket
 # Fuzzes input \x41\ up to 6000 bytes.
 buffer = ["A"]
 counter = 100
-cmd_list = ["AUTH", "STATS ", "RTIME ", "LTIME ", "SRUN ", "TRUN ", "GMON ", 
-            "GDOG ", "KSTET ", "GTER ", "HTER ", "LTER ", "KSTAN "]
+cmd_list = ["USER test\r\n"]
 
 while len(buffer) <= 30:
     buffer.append("A"*counter)
